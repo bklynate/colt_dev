@@ -1,0 +1,151 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Lato', sans-serif !important;
+  background-color: #ecf0f1;
+}
+
+.navbar-toggle{
+  background: black;
+}
+.logo {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: 700;
+}
+
+/* h3,h5 {
+  font-size: 35px;
+  font-weight: 700;
+} */
+
+img {
+  width: 100%;
+}
+
+#heading-content {
+  text-align: center;
+}
+
+
+.video-container .title-container #heading-content .container-hr .hrstyles {
+  width: 50%;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+.skill_list {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.about_me_section {
+  text-align: center;
+  padding: 300px 0px 0px 0px;
+}
+
+footer p {
+  font-size: 10px;
+}
+
+.navbar-inverse .navbar-brand {
+  color: gray;
+}
+
+.navbar-inverse .navbar-brand:hover {
+  color: gray;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: gray;
+}
+
+.navbar-inverse .navbar-nav>li>a:visited  {
+  color: gray;
+}
+
+.navbar-inverse {
+  background: #2c3e50;
+}
+
+.main_content_text {
+  font-size: 35px;
+}
+
+.list-text {
+  color: gray;
+  font-size: 15px;
+  list-style: none;
+}
+
+p {
+  font-size: 20px;
+}
+
+.navbar{
+  color: white;
+  background-color: white;
+}
+
+/*Css for the video*/
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+.video-container .title-container {
+    z-index: 1000;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
