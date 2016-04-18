@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Form Stuff
+  </title>
+</head>
+<body>
+  <h1>Register</h1>
+  <form>
+    <label for="firstName">First Name:</label>
+    <input id="firstName" type="text" placeholder="John" required></input>
+    <label for="lastName">Last Name:</label>
+    <input id="lastName" type="text" placeholder="Smith" required></input><br/>
+    <label for="male">Male</label>
+    <input id="male" type="radio" name="gender" value="male">
+    Female<input type="radio" name="gender" value="female">
+    Other<input type="radio" name="gender" value="other"><br>
+    <label for="email">Email:</label>
+    <input id="email" type="email" placeholder="your email" required></input>
+    <label for="password">Password:</label>
+    <input id="password" type="password" placeholder="password" minlength="5" maxlength="10" required></input>
+    <br>
+    <label>Birthday Month:</label>
+    <select id="birthday">
+      <option value="January">January</option>
+      <option value="February">February</option>
+      <option value="Mars">Mars</option>
+      <option value="April">April</option>
+      <option value="May">May</option>
+      <option value="June">June</option>
+      <option value="July">July</option>
+      <option value="September">September</option>
+      <option value="October">October</option>
+      <option value="November">November</option>
+      <option value="December">December</option>
+    </select><br>
+    I agree to the terms and conditions <input type="checkbox"><br>
+    <input type="submit"></input>
+  </form>
+</body>
+</html>

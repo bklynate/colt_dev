@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button DOM Test</title>
+  <style type="text/css">
+    .purple {
+      background: purple;
+    }
+  </style>
+</head>
+<body class="purple">
+  <button>Click me</button>
+<script type="text/javascript">
+ var button = document.querySelector("button");
+ // var isPurple = false
+
+  button.addEventListener("click",function(){
+    // if background if white, change color to purple
+    // if(isPurple){
+      // document.body.style.background = "white";
+      // isPurple = false;
+    // } else {
+    //   document.body.style.background = "purple";
+      // isPurple = true;
+    // }
+    // isPurple = !isPurple;
+
+    document.body.classList.toggle("purple");
+  })
+
+</script>
+</body>
+</html>
