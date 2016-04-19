@@ -1,4 +1,19 @@
+body {
+  background-color: #232323;
+}
+
+h1 {
+  color: white;
+}
 .square {
-  width: 100px;
-  border: 1px solid yellow;
+  width: 30%;
+  background: blue;
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.66%;
+}
+
+#container {
+  max-width: 680px;
+  margin: 0 auto;
 }
