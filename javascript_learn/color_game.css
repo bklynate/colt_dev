@@ -4,6 +4,13 @@ body {
 
 h1 {
   color: white;
+  text-align: center;
+}
+
+#whiteStripeArea{
+  text-align: center;
+  background: white;
+  height: 30px;
 }
 
 .square {

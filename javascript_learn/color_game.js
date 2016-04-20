@@ -2,9 +2,12 @@ var colors = generateSquareColors(6)
 // selects all squares
 var squares = document.querySelectorAll(".square");
 
-// hard coded a picked color for development persons
+// pickedColor is now the return of the pickedColor function
 var pickedColor = pickedColor();
 var colorDisplay = document.querySelector("#colorDisplay");
+
+// game messaging area
+var messageArea = document.querySelector("#message")
 
 // the random rgb color presented in the h1
 // is the color of the square you must pick
@@ -17,11 +20,13 @@ for(var i = 0; i < squares.length; i++){
   squares[i].addEventListener("click", function(){
     var clickedSquare = this.style.background;
     if(clickedSquare == pickedColor){
-      prompt("WINNER!!!");
+      alert("WINNER!!!");
       changeColors(pickedColor)
+      messageArea.textContent = "Winner!"
     } else {
       alert("You clicked the WRONG square");
       this.style.background = "#232323";
+      messageArea.textContent = "Try Again";
     }
   });
 }
