@@ -16,7 +16,7 @@ function generateSquareColors(num){
 function pickedColor(){
   // this gets a random number between 0 and the length of
   // the colors array
-  var randoNum = Math.floor(Math.random() * colors.length)
+  var randoNum = Math.floor(Math.random() * colors.length);
   return colors[randoNum];
 }
 
@@ -45,8 +45,8 @@ var resetButton = document.querySelector("#resetButton")
 // selects all squares
 var squares = document.querySelectorAll(".square");
 
-// pickedColor is now the return of the pickedColor function
-var pickedColor = pickedColor();
+// correctColor is now the return of the pickedColor function
+var correctColor = pickedColor();
 var colorDisplay = document.querySelector("#colorDisplay");
 
 // game messaging area
@@ -54,7 +54,7 @@ var messageArea = document.querySelector("#message");
 
 // the random rgb color presented in the h1
 // is the color of the square you must pick
-colorDisplay.textContent = pickedColor;
+colorDisplay.textContent = correctColor;
 
 /*
           EVENT LISTENERS
@@ -66,12 +66,11 @@ for(var i = 0; i < squares.length; i++){
   //add click listeners to all squares
   squares[i].addEventListener("click", function(){
     var clickedSquare = this.style.background;
-    if(clickedSquare == pickedColor){
+    if(clickedSquare == correctColor){
       alert("WINNER!!!");
-      changeColors(pickedColor)
+      changeColors(correctColor)
       messageArea.textContent = "Winner!"
     } else {
-      alert("You clicked the WRONG square");
       this.style.background = "#232323";
       messageArea.textContent = "Try Again";
     }
@@ -79,6 +78,16 @@ for(var i = 0; i < squares.length; i++){
 }
 
 resetButton.addEventListener("click", function(){
-  console.log("Who clicked me?")
+  // if clicked new colors array
+  colors = generateSquareColors(6);
+  // reset game message
+  messageArea.textContent = '';
+  // new picked color
+  correctColor = pickedColor();
+  // change display
+  colorDisplay.textContent = correctColor
+  // giving new colors to the squares
+  for(var n = 0; n<squares.length;n++){
+    squares[n].style.background = colors[n];
+  }
 });
-
