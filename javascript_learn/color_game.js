@@ -1,3 +1,35 @@
+/*
+          FUNCTIONS
+*/
+function generateSquareColors(num){
+  // empty list of colors
+  var colors = [];
+
+  // creates how ever many colors of 'num'
+  for(var n = 0; n < num; n++){
+    colors.push(randomColor());
+  }
+  // returns a complete list of random colors
+  return colors;
+}
+
+function pickedColor(){
+  // this gets a random number between 0 and the length of
+  // the colors array
+  var randoNum = Math.floor(Math.random() * colors.length)
+  return colors[randoNum]
+}
+
+function changeColors(color){
+  for(var n = 0; n < squares.length; n++){
+    squares[n].style.background = color;
+  }
+}
+
+/*
+          GLOBAL VARIABLES
+*/
+
 var colors = generateSquareColors(6)
 // selects all squares
 var squares = document.querySelectorAll(".square");
@@ -12,6 +44,10 @@ var messageArea = document.querySelector("#message")
 // the random rgb color presented in the h1
 // is the color of the square you must pick
 colorDisplay.textContent = pickedColor;
+
+/*
+          EVENT LISTENERS
+*/
 
 // for loop to assign a color to a square
 for(var i = 0; i < squares.length; i++){
