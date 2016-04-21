@@ -90,7 +90,7 @@ resetButton.addEventListener("click", function(){
   // change display
   colorDisplay.textContent = correctColor
   // reset h1 color
-  h1.style.background = "#232323"
+  h1.style.background = "steelblue"
   // giving new colors to the squares
   for(var n = 0; n<squares.length;n++){
     squares[n].style.background = colors[n];
@@ -110,7 +110,7 @@ hardButton.addEventListener("click", function(){
   // change display
   colorDisplay.textContent = correctColor;
   // reset h1 color
-  h1.style.background = "#232323";
+  h1.style.background = "steelblue";
   // giving new colors to the squares
   for(var n = 0; n<squares.length;n++){
    squares[n].style.display = "block";
@@ -131,7 +131,7 @@ easyButton.addEventListener("click", function(){
   // change display
   colorDisplay.textContent = correctColor;
   // reset h1 color
-  h1.style.background = "#232323";
+  h1.style.background = "steelblue";
   // giving new colors to the squares
   for(var n = 0; n<squares.length;n++){
     // if there are colors present
